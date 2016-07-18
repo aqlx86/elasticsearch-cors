@@ -1,4 +1,6 @@
-# Latest ElasticSearch with 
+# Latest ElasticSearch 
+
+With minor changes in elasticsearch.yml
 
 ## Current settings
 
@@ -21,3 +23,20 @@ http.cors.allow-origin: "*"
 # Test
 
 ` curl localhost:9200 `
+
+should output something like this.
+
+```
+{
+  "name" : "node-1",
+  "cluster_name" : "elasticsearch-cors",
+  "version" : {
+    "number" : "2.3.4",
+    "build_hash" : "e455fd0c13dceca8dbbdbb1665d068ae55dabe3f",
+    "build_timestamp" : "2016-06-30T11:24:31Z",
+    "build_snapshot" : false,
+    "lucene_version" : "5.5.0"
+  },
+  "tagline" : "You Know, for Search"
+}
+```
